@@ -1,2 +1,6 @@
-job1:
-  script: "echo hello"
+test:
+  script:
+  # this configures our test
+  - apt-get install -y python-dev python-pip
+  - pip install coverage
+  - coverage run test_rpn.py
