@@ -1,6 +1,4 @@
 test:
   script:
-  # this configures our test
-  - apt-get install -y python-dev python-pip
-  - pip install coverage
+  # this will run on a macOS environment since the runner is configured to my mac
   - coverage run test_rpn.py
