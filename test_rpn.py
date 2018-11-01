@@ -11,5 +11,5 @@ class TestBasics(unittest.TestCase):
         self.assertEqual(1, result);
 
     def test_toomany(self):
-        with self.assertRaises(ValueError)
+        with self.assertRaises(ValueError):
             result = rpn.calculate('1 2 3 +')
