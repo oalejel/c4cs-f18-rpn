@@ -2,3 +2,4 @@ test:
   script:
   # this will run on a macOS environment since the runner is configured to my mac
   - coverage run test_rpn.py
+  - coverage report
