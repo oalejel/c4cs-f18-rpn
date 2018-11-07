@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 
+import readline
+from termcolor import colored
+
 def calculate(arg):
     stack = []
 
@@ -28,7 +31,10 @@ def main():
     while True:
         try:
             result = calculate(input('rpn calc> '))
-            print(result)
+            if (result >= 0):
+                print(colored(result, 'green'))
+            else:
+                print(colored(result, 'yellow'))
         except ValueError:
             # we need to allow the valueerror exception to let the code proceed
             pass
