@@ -14,3 +14,10 @@ class TestBasics(unittest.TestCase):
         with self.assertRaises(ValueError):
             result = rpn.calculate('1 2 3 +')
 
+    def test_exp(self):
+        result = rpn.calculate('4 2 ^')
+        self.assertEqual(16, result)
+
+
+if __name__ == '__main__':
+    unittest.main()
